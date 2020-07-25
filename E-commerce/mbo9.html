@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+            .card{
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            -webkit-box-shadow: 13px 9px 20px 8px rgba(0,0,0,0.53);
+-moz-box-shadow: 13px 9px 20px 8px rgba(0,0,0,0.53);
+box-shadow: 13px 9px 20px 8px rgba(0,0,0,0.53);
+
+        }
+
+        </style>
+</head>
+<body>
+   
+
+  <div class="container-fluid bg-dark text-white pt-3 pb-3"><center><a href="About.html" class="text-white">About</a> | <a href="#" class="text-white">Our Stores</a> |<a href="FAQ's.html" class="text-white"> FAQ's </a>|<a href="Contactus.html" class="text-white"> Contact</a> |<a href="WishList.html" class="text-white"> WishList</a> | <a href="#" class="text-white">Compare </a>| <select class="bg-dark text-white"><option>Eng</option><option>Hindi</option></option></select> </center></div>
+    <nav class="navbar navbar-light bg-light navbar-expand-lg" id="myNavbar">
+ 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a href="index.html" class="navbar-brand"> Logo</a>
+        <div class="collapse navbar-collapse" id="mainNav">
+         <ul class="navbar-nav ml-auto nav-fill">
+          
+          <li class="nav-item px-4">
+           <a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item px-4">
+            <a href="Blogs.html" class="nav-link">Blog</a>
+           </li>
+           <li class="nav-item px-4">
+             <a href="#" class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
+            </li>
+           
+            <li class="nav-item px-4">
+             <a href="Cart.html" class="nav-link">Cart</a>
+            </li>
+          <li class="nav-item px-4 dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
+           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+            <a class="dropdown-item" href="Women.html">Women's Collection</a>
+           
+            <div class="dropdown-divider"></div>
+            <div class="d-md-flex align-items-start justify-content-start">
+             <div>   
+              <div class="dropdown-header">Clothing</div>
+              <a class="dropdown-item" href="Coats(F).html">Coats</a>
+              <a class="dropdown-item" href="Jackets(F).html">Jackects</a>
+              <a class="dropdown-item" href="Blazer(F).html">Blazer</a>
+              <a class="dropdown-item" href="Dresses(F).html">Dresses</a>
+              <a class="dropdown-item" href="Trousers(F).html">Trosers</a>
+              <a class="dropdown-item" href="Jeans(F).html">Jeans</a>
+              <a class="dropdown-item" href="Sweatshirsts(F).html">Sweatshirts</a>
+              <a class="dropdown-item" href="T-shirts(F).html">T-sirts</a>
+
+             </div>
+             <div>
+              <div class="dropdown-header">Shoes</div>
+              <a class="dropdown-item" href="Trainers(F).html">Trainer</a>
+              <a class="dropdown-item" href="Boots(F).html">Boots</a>
+              <a class="dropdown-item" href="Heels(F).html">Heels</a>
+              <a class="dropdown-item" href="Flates(F).html">Flates</a>
+              <a class="dropdown-item" href="Sandals(F).html">Hraled Sandals</a>
+              <a class="dropdown-item" href="Plateform(F).html">Platforms</a>
+             </div>
+             <div>
+              <div class="dropdown-header">Accessories</div>
+              <a class="dropdown-item" href="Bags(F).html">Bags</a>
+              <a class="dropdown-item" href="Glass(F).html">Glass</a>
+              <a class="dropdown-item" href="Jewellery(F).html">Jewellery</a>
+              <a class="dropdown-item" href="phonecase(F).html">Phone Cases</a>
+              <a class="dropdown-item" href="Hats(F).html">Hats & Beanie</a>
+              <a class="dropdown-item" href="Purses(F).html">Purses</a>
+             
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="nav-item px-4 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+             <a class="dropdown-item" href="Men.html">Men's Collection/a>
+             
+             <div class="dropdown-divider"></div>
+             <div class="d-md-flex align-items-start justify-content-start">
+              <div>   
+                <div class="dropdown-header">Clothing</div>
+                <a class="dropdown-item" href="Coats(M).html">Coats</a>
+                <a class="dropdown-item" href="Jackets(M).html">Jackects</a>
+                <a class="dropdown-item" href="Blazer(M).html">Blazer</a>
+                <a class="dropdown-item" href="Dresses(M).html">Dresses</a>
+                <a class="dropdown-item" href="Trousers(M).html">Trosers</a>
+                <a class="dropdown-item" href="Jeans(M).html">Jeans</a>
+                <a class="dropdown-item" href="Sweatshirsts(M).html">Sweatshirts</a>
+                <a class="dropdown-item" href="T-shirts(M).html">T-sirts</a>
+  
+              </div>
+              <div>
+                <div class="dropdown-header">Shoes</div>
+              <a class="dropdown-item" href="Trainers(M).html">Trainer</a>
+              <a class="dropdown-item" href="Boots(M).html">Boots</a>
+              <a class="dropdown-item" href="Heels(M).html">Heels</a>
+              <a class="dropdown-item" href="Flates(M).html">Flates</a>
+              <a class="dropdown-item" href="Sandals(M).html">Hraled Sandals</a>
+              <a class="dropdown-item" href="Plateform(M).html">Platforms</a>
+              </div>
+              <div>
+                <div class="dropdown-header">Accessories</div>
+              <a class="dropdown-item" href="Bags(M).html">Bags</a>
+              <a class="dropdown-item" href="Glass(M).html">Glass</a>
+              <a class="dropdown-item" href="Jewellery(M).html">Jewellery</a>
+              <a class="dropdown-item" href="phonecase(M).html">Phone Cases</a>
+              <a class="dropdown-item" href="Hats(M).html">Hats & Beanie</a>
+              <a class="dropdown-item" href="Purses(M).html">Purses</a>
+             
+              </div>
+             </div>
+            </div>
+           </li>
+           <li class="nav-item px-4 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+             <a class="dropdown-item" href="Elctronics.html">Categories</a>
+             
+             <div class="dropdown-divider"></div>
+             <div class="d-md-flex align-items-start justify-content-start">
+              <div>   
+               <div class="dropdown-header" >Mobie Accessories & Headphones</div>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Powerbank</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Cases & Covers</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Headset</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Data Cables</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Charger</a>
+                <a class="dropdown-item" href="Mobile & Accessories.html">Earphones</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">On & Over Earphones</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Wireless Headphones</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Headphone with Mic</a>
+               <a class="dropdown-item" href="Mobile & Accessories.html">Sports Headphone</a>
+               
+              </div>
+              <div>
+               <div class="dropdown-header">Camera</div>
+               <a class="dropdown-item" href="Camera.html">Digital SLRs</a>
+               <a class="dropdown-item" href="Camera.html">Point & Shoot</a>
+               <a class="dropdown-item" href="Camera.html">Merrorless Cameras</a>
+               <a class="dropdown-item" href="Camera.html">Camcorders</a>
+               <a class="dropdown-item" href="Camera.html">Camera Lenses</a>
+               <a class="dropdown-item" href="Camera.html">Action Cameras</a>
+               <a class="dropdown-item" href="Camera.html">Spy Cameras</a>
+              </div>
+              
+               
+              <div>
+                <div class="dropdown-header " >Speakers</div>
+                <a class="dropdown-item" href="Speakers.html">Blutooth Speaker</a>
+                <a class="dropdown-item" href="Speakers.html">Multimedia Speaker</a>
+                <a class="dropdown-item" href="Speakers.html">Home theater system</a>
+                <a class="dropdown-item" href="Speakers.html">Soundbars</a>
+               
+                
+               </div>
+               <div>
+                <div class="dropdown-header" >Television</div>
+                <a class="dropdown-item" href="Television.html">Smart TVs</a>
+                <a class="dropdown-item" href="Television.html">32 inch TVs</a>
+                <a class="dropdown-item" href="Television.html">Large Screen TVs</a>
+                <a class="dropdown-item" href="Television.html">4K TVs</a>
+                <a class="dropdown-item" href="Television.html">Full HD TVs</a>
+               
+                
+               </div>
+               <div>
+                <div class="dropdown-header">Laptops</div>
+                <a class="dropdown-item" href="Laptops.html">Thin and light laptops</a>
+                <a class="dropdown-item" href="Laptops.html">2-in-1 Laptops</a>
+                <a class="dropdown-item" href="Laptops.html">Gaming Laptops</a>
+                <a class="dropdown-item" href="Laptops.html">Budget laptops</a>
+               
+               
+                
+               </div>
+               
+             </div>
+            </div>
+           </li>
+
+           <li class="nav-item px-4 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+             <a class="dropdown-item" href="Book.html">Book's Collection</a>
+             
+             <div class="dropdown-divider"></div>
+             <div class="d-md-flex align-items-start justify-content-start">
+              <div>   
+               <div class="dropdown-header">Types</div>
+               <a class="dropdown-item" href="#">Comics</a>
+               <a class="dropdown-item" href="#">Novels</a>
+               <a class="dropdown-item" href="#">Story Book</a>
+               <a class="dropdown-item" href="#">Kid</a>
+               <a class="dropdown-item" href="#">Stationary</a>
+               <a class="dropdown-item" href="#">Dairy</a>
+              </div>
+              
+             </div>
+            </div>
+           </li>
+         
+           
+           
+          <li class="nav-item px-4">
+           <a href="#" class="nav-link"><div class="dropdown"><form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Type Something...">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form></div></a>
+          </li>
+         
+         </ul>
+        </div>
+       </nav>
+
+
+       <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                Home &GT Shop &GT Men &GT Men's Dress
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="mbo9.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="mbo9.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+             
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <h2> Boot</h2>
+                </div>
+                <div class="row"><h1><i class="fa fa-inr" aria-hidden="true"></i> 899</h1>&nbsp;&nbsp;
+               <!-- <h3><del>799</del></h3>&nbsp;&nbsp;-->
+                 <!-- <h2 class="text-success">30% OFF</h2>-->
+                 <h2 class="text-success">New!!</h2>
+                <div class="row">
+                    <h3 class="text-warning">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                    </h3>&nbsp;&nbsp;
+                    <h5>1200 star rating and 250 reviews</h5>
+                </div>
+            </div>
+                <div class="row">
+                    <p><i class="fa fa-check-square-o text-success" aria-hidden="true"></i><strong>Bank Offer</strong>25% Discount on HDFC Credit Card</p>
+                    <p><i class="fa fa-check-square-o text-success" aria-hidden="true"></i><strong>Bank Offer</strong>5% Ulimited Cashback On Flipcard Axis Bank Credit Card</p>
+                    <p><i class="fa fa-check-square-o text-success" aria-hidden="true"></i><strong>Bank Offer</strong> Extra 5% OFF with  Axis bank Buzz Credit Card</p>
+                    <p><i class="fa fa-check-square-o text-success" aria-hidden="true"></i><strong>Bank Offer</strong>20% instant Discount on pay with <i class="fa fa-google-wallet" aria-hidden="true"></i>google wallet</p>
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="text-info"><i class="fa fa-map-marker" aria-hidden="true"></i></h3>
+                        <p style="font-size: 20px;"> &nbsp;Delivery by 23 Jul, Tuesday | &nbsp;<span class="text-success">free</span></p>
+
+                    </div>
+                    <div class="row mt-4">
+                        <h4>Size:&nbsp;&nbsp;</h4>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select Size
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Small</a>
+                              <a class="dropdown-item" href="#">Medium</a>
+                              <a class="dropdown-item" href="#">Large</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row mt-4"> 
+                      <h4>Colour:&nbsp;&nbsp;</h4>
+                      <div class="dropdown">
+                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select Colour
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Green</a>
+                          <a class="dropdown-item" href="#">Red</a>
+                          <a class="dropdown-item" href="#">Pink</a>
+                          <a class="dropdown-item" href="#">Blue</a>
+                          <a class="dropdown-item" href="#">White</a>
+                          <a class="dropdown-item" href="#">Black</a>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="row mt-4"> 
+                        <h4> Seller:&nbsp;&nbsp; </h4><p style="font-size: 18px;"> V.C. Productions</p>
+                    </div>
+                    
+
+                </div>
+                </div>
+            </div>
+            <div class ="container">
+                <div class="row mt-5">
+                    <h2>Similar Products</h2>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top img-fluid" src="mbo2.jpg">
+                                <div class="card-title">
+                                    <h4>Boot</h4>
+                                </div>
+                                <div class="card-text">
+                                  ijdsgiugdfiu jk989pfslhj uy8sguihfdknokokg8o jsefguij js nvu </br></br>
+                                  <a class="btn btn-dark text-light">Buy Now</a>&nbsp;<a class="btn btn-dark text-light"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Add to Cart</a><br/><br/>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="mbo3.jpg">
+                            <div class="card-title">
+                                <h4>Boot</h4>
+                            </div>
+                            <div class="card-text">
+                              ijdsgiugdfiu jk989pfslhj uy8sguihfdknokokg8o jsefguij js nvu </br></br>
+                              <a class="btn btn-dark text-light">Buy Now</a>&nbsp;<a class="btn btn-dark text-light"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Add to Cart</a><br/><br/>
+                            </div>
+                        </div>
+                    
+
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="mbo4.jpg">
+                        <div class="card-title">
+                            <h4>Boot</h4>
+                        </div>
+                        <div class="card-text">
+                          ijdsgiugdfiu jk989pfslhj uy8sguihfdknokokg8o jsefguij js nvu </br></br>
+                          <a class="btn btn-dark text-light">Buy Now</a>&nbsp;<a class="btn btn-dark text-light"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Add to Cart</a><br/><br/>
+                        </div>
+                    </div>
+                </div>
+
+            
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="mbo5.jpg">
+                    <div class="card-title">
+                        <h4>Boot</h4>
+                    </div>
+                    <div class="card-text">
+                      ijdsgiugdfiu jk989pfslhj uy8sguihfdknokokg8o jsefguij js nvu </br></br>
+                      <a class="btn btn-dark text-light">Buy Now</a>&nbsp;<a class="btn btn-dark text-light"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp; Add to Cart</a><br/><br/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+            </div>
+            <div class="container mt-5 mb-5">
+                <div classs="row">
+                    <h2> Rating & Reviews</h2>
+                    </div>
+                    <div class="row mt-5 mb-5">
+                        <div class="media">
+                            <img src="cu.jpg" class="mr-3" alt="...">
+                            <div class="media-body">
+                              <h5 class="mt-0">very good product <span class="text-warning"><i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-5 mb-5">
+                            <div class="media">
+                                <img src="cu.jpg" class="mr-3" alt="...">
+                                <div class="media-body">
+                                  <h5 class="mt-0">very good product <span class="text-warning"><i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    <i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mt-5 mb-5">
+                                <div class="media">
+                                    <img src="cu.jpg" class="mr-3" alt="...">
+                                    <div class="media-body">
+                                      <h5 class="mt-0">very good product <span class="text-warning"><i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mt-5 mb-5">
+                                    <div class="media">
+                                        <img src="cu.jpg" class="mr-3" alt="...">
+                                        <div class="media-body">
+                                          <h5 class="mt-0">very good product <span class="text-warning"><i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o" aria-hidden="true"></i></span></h5>
+                                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                      <h2> Post Your Own Reviews</h2>
+
+                                        </div>
+                                        <form>
+                                            <div class="form-group">
+                                              <label for="exampleInputEmail1">Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputPassword1">Comments</label>
+                                              <textarea type="text" class="form-control" id="textarea" placeholder="Write your Own Comments" rows="3"></textarea>
+                                            </div>
+                                            <div class="form-group form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                        
+                </div>
+
+                <footer class="page-footer font-small bg-dark pt-4 text-white">
+
+                  <div class="container text-center text-md-left">
+                
+                  
+                    <div class="row">
+                
+                    
+                      <div class="col-md-4 mx-auto">
+                
+                        
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u> Content</u></h5>
+                        <p> Here we are providing our best product that you gave confidents and make beatifual and useful for evry time .Our service gave you full satisfaction.
+                            <br><center>Hope you like it!!</center>
+                            
+                        </p>
+                
+                      </div>
+                    
+                
+                      <hr class="clearfix w-100 d-md-none">
+                
+                    
+                      <div class="col-md-2 mx-auto">
+                
+                      
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u>Quick Links</u></h5>
+                
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="About.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="FAQ's.html">FAQ's</a>
+                          </li>
+                          <li>
+                            <a href="Customer_Service.html">Customer Services</a>
+                          </li>
+                          <li>
+                            <a href="Contactus.html">Contact Us</a>
+                          </li>
+                        </ul>
+                
+                      </div>
+                     
+                
+                      <hr class="clearfix w-100 d-md-none">
+                
+                  
+                      <div class="col-md-2 mx-auto">
+                
+                      
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u> Information </u></h5>
+                
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="About.html">About Us</a>
+                          </li>
+                          <li>
+                            <a href="Contactus.html">Contact Us</a>
+                          </li>
+                          <li>
+                            <a href="Size_Guide.html">Size Guide</a>
+                          </li>
+                          <li>
+                            <a href="Customer_Service.html">Customer Services</a>
+                          </li>
+                        </ul>
+                
+                      </div>
+                   
+                
+                      <hr class="clearfix w-100 d-md-none">
+                
+                    
+                      <div class="col-md-3 mx-auto">
+                
+                       
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u>Contact Us</u></h5>
+                
+                        <ul class="list-unstyled">
+                          <li><i class="fa fa-map-marker-alt"></i>
+                              Location: Udhana Darvaja
+                              Surat, Gujarat
+                          </li>
+                          <li>
+                              Call Us: (+91) 91456-7898
+                          </li>
+                          <li>
+                              Email Us: support@abc.com
+                          </li>
+                          <li>
+                              Fax: +123456
+                          </li>
+                        </ul>
+                
+                      </div>
+                      
+                
+                    </div>
+                    
+                
+                  </div>
+              
+                
+                  <hr>
+                
+               
+                  <ul class="list-unstyled list-inline text-center py-2">
+                    <li class="list-inline-item">
+                      <h5 class="mb-1">Register for free</h5>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#!" class="btn btn-danger btn-rounded"  data-toggle="modal" data-target="#signup">Sign up!</a>
+                    </li>
+                  </ul>
+                  
+                
+                  <hr>
+                
+              
+                  <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-fb mx-1">
+                        <i class="fa fa-facebook-f"> </i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-tw mx-1">
+                        <i class="fa fa-twitter"> </i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-gplus mx-1">
+                        <i class="fa fa-google-plus"> </i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-li mx-1">
+                        <i class="fa fa-linkedin"> </i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-dribbble mx-1">
+                        <i class="fa fa-dribbble"> </i>
+                      </a>
+                    </li>
+                  </ul>
+                  
+                  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="#" class="text-secondary"> ABC.com</a>
+                  </div>
+                 
+                
+                </footer>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+    <div class="modal-content">
+    <div class="modal-header">
+      <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      
+    </div>
+    <div class="modal-body">
+      <form>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="fname" pattern="[a-z][0-9]"class="form-control" required>
+        <label for="pwd"><b>Password</b></label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" maxlength="6" name="pswd">
+    <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+     <div>
+         <br>
+        <p><b>If you have not account then first Register it !! </b> <a href="registerform.html">Register...</a>.</p>
+          </div>
+          <div>
+        
+           <p><a href="#forgotpassword" data-toggle="modal" data-target="#rpwd"><b>Forgot Password</b> </a>.</p>
+             </div>
+          
+        
+    </form>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+      </button>
+      <p>Need <a href="#">help?</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="modal fade" id="signup" role="dialog">
+    <div class="modal-dialog">
+    
+    <div class="modal-content">
+    <div class="modal-header">
+    <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    
+    </div>
+    <div class="modal-body">
+    <label for="fname"><b>Firstname</b></label>
+    <input type="text" placeholder="Enter Firstname" name="fname"class="form-control" required>
+    
+    <label for="lname"><b>Lastname</b></label>
+    <input type="text" placeholder="Enter Lastname" name="lname"class="form-control" required>
+    <label for="gender"><b>Gender</b></label>
+    <div class="radio">
+        <label><input type="radio" name="optradio" checked>Female</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio">Male</label>
+      </div>
+    
+    
+    <label for="phone"><b>Phone no</b></label>
+    <input type="tel" placeholder="Enter Phone No" name="phone" maxlength=10 class="form-control" required>
+    
+    <div class="form-group">
+        <label for="Address"><b>Address</b></label>
+        <textarea class="form-control" rows="5" id="add" name="add"></textarea>
+      </div>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="fname" pattern="[a-z][0-9]"class="form-control" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email"class="form-control" required>
+    
+    
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"class="form-control" maxlength="6" required>
+    
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" class="form-control" maxlength="6" required>
+    
+    
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+    
+    
+    
+    </div>
+    </form>
+      
+    
+    </div>
+    <div class="modal-footer">
+    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+      <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+    <p>Need <a href="#">help?</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="modal fade" id="rpwd" role="dialog">
+      <div class="modal-dialog">
+      
+      <div class="modal-content">
+      <div class="modal-header">
+        <h4><span class="glyphicon glyphicon-lock"></span> Reset Password</h4>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        
+      </div>
+      <div class="modal-body">
+        <form>
+          <br>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="fname" pattern="[a-z][0-9]"class="form-control" required>
+          <label for="pwd"><b>Password:</b></label>
+          <input type="password" class="form-control" id="pwd" placeholder="New password" maxlength="6" name="npswd">
+      <br>
+          <button type="submit" class="btn btn-info">Submit</button>
+      
+          
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Need <a href="#">help?</a></p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+    
+    
+    
+    
+    
+</body>
+</html>
