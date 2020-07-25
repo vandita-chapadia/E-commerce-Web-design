@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        .container {
+          width: 100%;
+          margin-top: 10%;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+
+        }
+
+        .container h2
+        {
+            background: #0062cc;
+            color:#fff;
+            width: 200px;
+            font-size: 24px;
+            padding: 5px;
+            height: 40px;
+
+        }
+        .container h2::after
+        {
+           content: '';
+           border-top: 40px solid #0062cc;
+           border-right: 40px solid transparent;
+           position: relative;
+           left: 48px;
+           top: 34px;
+
+        }
+        .row
+        {
+          
+           margin-top: 30px;
+        }
+        img
+        {
+            width:100%;
+
+
+        }
+        .product-bottom .fa
+        {
+            color: #28a745;
+            font-size: 10px;
+        }
+        .product-bottom h3{
+
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product-bottom h5{
+
+        font-size: 15px;
+        padding-bottom: 10px;
+
+       }
+       .overlay1
+       {
+           display: block;
+           opacity: 0;
+           position: absolute;
+           top: 10%;
+           margin-left: 0;
+           width: 70px;
+       }
+       .product-top:hover .overlay1
+       {
+          opacity: 1;
+          margin-left:5%;
+          transition: 0.5s;
+
+       }
+       .overlay1 .fa
+       {
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        padding: 7px;
+        margin: 5%;
+        margin-bottom: 5%;
+
+       }
+
+       .overlay1 .btn-secondary{
+
+           background: transparent !important;
+           border: none !important;
+           box-shadow: non !important;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-dark text-white pt-3 pb-3"><a href="#" class="text-white">About</a> | <a href="#" class="text-white">Our Stores</a> |<a href="#" class="text-white"> FAQ's </a>|<a href="#" class="text-white"> Contact</a> <span class="float-right"><a href="#" class="text-white"> WishList</a> | <a href="#" class="text-white">Compare </a>| <select class="bg-dark text-white"><option>Eng</option><option>Hindi</option></option></select> </div>
+    <nav class="navbar navbar-light bg-light navbar-expand-lg" id="myNavbar">
+ 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <a href="#" class="navbar-brand"> Logo</a>
+        <div class="collapse navbar-collapse" id="mainNav">
+         <ul class="navbar-nav ml-auto nav-fill">
+          
+          <li class="nav-item px-4">
+           <a href="#" class="nav-link">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item px-4">
+            <a href="#" class="nav-link">Blog</a>
+           </li>
+           <li class="nav-item px-4">
+             <a href="#" class="nav-link" data-toggle="modal" data-target="#myModal">Login</a>
+            </li>
+           
+            <li class="nav-item px-4">
+             <a href="#" class="nav-link">Cart</a>
+            </li>
+          <li class="nav-item px-4 dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
+           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+            <a class="dropdown-item" href="#">Women's Collection</a>
+           
+            <div class="dropdown-divider"></div>
+            <div class="d-md-flex align-items-start justify-content-start">
+             <div>   
+              <div class="dropdown-header">Clothing</div>
+              <a class="dropdown-item" href="#">Coats</a>
+              <a class="dropdown-item" href="#">Jackects</a>
+              <a class="dropdown-item" href="#">Blazer</a>
+              <a class="dropdown-item" href="#">Dresses</a>
+              <a class="dropdown-item" href="#">Trosers</a>
+              <a class="dropdown-item" href="#">Jeans</a>
+              <a class="dropdown-item" href="#">Sweatshirts</a>
+              <a class="dropdown-item" href="#">T-sirts</a>
+
+             </div>
+             <div>
+              <div class="dropdown-header">Shoes</div>
+              <a class="dropdown-item" href="#">Trainer</a>
+              <a class="dropdown-item" href="#">Boots</a>
+              <a class="dropdown-item" href="#">Heels</a>
+              <a class="dropdown-item" href="#">Flates</a>
+              <a class="dropdown-item" href="#">Hraled Sandals</a>
+              <a class="dropdown-item" href="#">Platforms</a>
+             </div>
+             <div>
+              <div class="dropdown-header">Accessories</div>
+              <a class="dropdown-item" href="#">Bags</a>
+              <a class="dropdown-item" href="#">Glass</a>
+              <a class="dropdown-item" href="#">Jewellery</a>
+              <a class="dropdown-item" href="#">Phone Cases</a>
+              <a class="dropdown-item" href="#">Hats & Beanie</a>
+              <a class="dropdown-item" href="#">Purses</a>
+             
+             </div>
+            </div>
+           </div>
+          </li>
+          <li class="nav-item px-4 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Men</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+             <a class="dropdown-item" href="#">Men's Collection/a>
+             
+             <div class="dropdown-divider"></div>
+             <div class="d-md-flex align-items-start justify-content-start">
+              <div>   
+                <div class="dropdown-header">Clothing</div>
+                <a class="dropdown-item" href="#">Coats</a>
+                <a class="dropdown-item" href="#">Jackects</a>
+                <a class="dropdown-item" href="#">Blazer</a>
+                <a class="dropdown-item" href="#">Dresses</a>
+                <a class="dropdown-item" href="#">Trosers</a>
+                <a class="dropdown-item" href="#">Jeans</a>
+                <a class="dropdown-item" href="#">Sweatshirts</a>
+                <a class="dropdown-item" href="#">T-sirts</a>
+  
+              </div>
+              <div>
+                <div class="dropdown-header">Shoes</div>
+              <a class="dropdown-item" href="#">Trainer</a>
+              <a class="dropdown-item" href="#">Boots</a>
+              <a class="dropdown-item" href="#">Heels</a>
+              <a class="dropdown-item" href="#">Flates</a>
+              <a class="dropdown-item" href="#">Hraled Sandals</a>
+              <a class="dropdown-item" href="#">Platforms</a>ass="dropdown-item" href="#">Application support &amp; maintenance</a>
+              </div>
+              <div>
+                <div class="dropdown-header">Accessories</div>
+              <a class="dropdown-item" href="#">Bags</a>
+              <a class="dropdown-item" href="#">Glass</a>
+              <a class="dropdown-item" href="#">Jewellery</a>
+              <a class="dropdown-item" href="#">Phone Cases</a>
+              <a class="dropdown-item" href="#">Hats & Beanie</a>
+              <a class="dropdown-item" href="#">Purses</a>
+             
+              </div>
+             </div>
+            </div>
+           </li>
+           <li class="nav-item px-4 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+             <a class="dropdown-item" href="#">Categories</a>
+             
+             <div class="dropdown-divider"></div>
+             <div class="d-md-flex align-items-start justify-content-start">
+              <div>   
+               <div class="dropdown-header">Mobie Accessories & Headphones</div>
+               <a class="dropdown-item" href="#">Powerbank</a>
+               <a class="dropdown-item" href="#">Cases & Covers</a>
+               <a class="dropdown-item" href="#">Headset</a>
+               <a class="dropdown-item" href="#">Data Cables</a>
+               <a class="dropdown-item" href="#">Charger</a>
+                <a class="dropdown-item" href="#">Earphones</a>
+               <a class="dropdown-item" href="#">On & Over Earphones</a>
+               <a class="dropdown-item" href="#">Wireless Headphones</a>
+               <a class="dropdown-item" href="#">Headphone with Mic</a>
+               <a class="dropdown-item" href="#">Sports Headphone</a>
+               
+              </div>
+              <div>
+               <div class="dropdown-header">Camera</div>
+               <a class="dropdown-item" href="#">Digital SLRs</a>
+               <a class="dropdown-item" href="#">Point & Shoot</a>
+               <a class="dropdown-item" href="#">Merrorless Cameras</a>
+               <a class="dropdown-item" href="#">Camcorders</a>
+               <a class="dropdown-item" href="#">Camera Lenses</a>
+               <a class="dropdown-item" href="#">Action Cameras</a>
+               <a class="dropdown-item" href="#">Spy Cameras</a>
+              </div>
+              
+               
+              <div>
+                <div class="dropdown-header">Speakers</div>
+                <a class="dropdown-item" href="#">Blutooth Speaker</a>
+                <a class="dropdown-item" href="#">Multimedia Speaker</a>
+                <a class="dropdown-item" href="#">Home theater system</a>
+                <a class="dropdown-item" href="#">Soundbars</a>
+               
+                
+               </div>
+               <div>
+                <div class="dropdown-header">Television</div>
+                <a class="dropdown-item" href="#">Smart TVs</a>
+                <a class="dropdown-item" href="#">32 inch TVs</a>
+                <a class="dropdown-item" href="#">Large Screen TVs</a>
+                <a class="dropdown-item" href="#">4K TVs</a>
+                <a class="dropdown-item" href="#">Full HD TVs</a>
+               
+                
+               </div>
+               <div>
+                <div class="dropdown-header">Laptops</div>
+                <a class="dropdown-item" href="#">Thin and light laptops</a>
+                <a class="dropdown-item" href="#">2-in-1 Laptops</a>
+                <a class="dropdown-item" href="#">Gaming Laptops</a>
+                <a class="dropdown-item" href="#">Budget laptops</a>
+               
+               
+                
+               </div>
+               
+             </div>
+            </div>
+           </li>
+
+           <li class="nav-item px-4 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+             <a class="dropdown-item" href="#">Book's Collection</a>
+             
+             <div class="dropdown-divider"></div>
+             <div class="d-md-flex align-items-start justify-content-start">
+              <div>   
+               <div class="dropdown-header">Types</div>
+               <a class="dropdown-item" href="#">Comics</a>
+               <a class="dropdown-item" href="#">Novels</a>
+               <a class="dropdown-item" href="#">Story Book</a>
+               <a class="dropdown-item" href="#">Kid</a>
+               <a class="dropdown-item" href="#">Stationary</a>
+               <a class="dropdown-item" href="#">Dairy</a>
+              </div>
+              
+             </div>
+            </div>
+           </li>
+         
+           
+           
+          <li class="nav-item px-4">
+           <a href="#" class="nav-link"><div class="dropdown"><form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Type Something...">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form></div></a>
+          </li>
+         
+         </ul>
+        </div>
+       </nav>
+
+
+       <div class="container-fluid pt-3">
+        <div class="jumbotron text-center">
+          <h1><b>Masterpage Of Subcatagories of dropdown</b></h1>
+        </div>
+        </div>
+
+        <div class="container">
+            <h2>New Arrivals </h2>
+            <div class="row">
+           <div class="col-md-3">
+             <div class="product-top">
+                 <img src="n1.jpg" style="width: 290x;height: 300px;">
+                 <div class="overlay1">
+                     <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                     <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                     <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                     <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                     </button>
+                    </div>
+             </div>
+             <div class="product-bottom text-center">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star-half-o" ></i>
+                <i class="fa fa-star-o" ></i>
+                <h3>Simple Top</h3>
+                <h5>Rs.400.00</h5>
+             </div>
+             <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+            </div>
+            <div class="col-md-3">
+                <div class="product-top">
+                    <img src="f2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>   
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-half-o" ></i>
+                   
+                   <h3>Laptop</h3>
+                   <h5>Rs.500000.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+               <div class="col-md-3">
+                <div class="product-top" >
+                    <img src="f3.jpg"style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>  
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Sandle</h3>
+                   <h5>Rs.1000.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3 ">
+                <div class="product-top">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+               <div class="col-md-3  mt-5">
+                <div class="product-top">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3">
+                <div class="product-top  mt-5">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3  mt-5">
+                <div class="product-top">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3  mt-5">
+                <div class="product-top">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3  mt-5 mb-5">
+                <div class="product-top">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3  mt-5 mb-5">
+                <div class="product-top ">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3  mt-5 mb-5">
+                <div class="product-top">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               <div class="col-md-3 mt-5 mb-5">
+                <div class="product-top">
+                    <img src="n2.jpg" style="width: 260px;height: 300px;">
+                    <div class="overlay1">
+                        <button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-secondary" title="Compare"><i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button> 
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <i class="fa fa-star-o" ></i>
+                   <h3>Fine Casual in Red</h3>
+                   <h5>Rs.399.00</h5>
+                </div>
+                <button type="submit" class="btn btn-dark text-white btn-block">Add To Cart</button>
+               </div>
+            
+               
+               
+               
+            </div>
+        </div>
+       <!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-4 text-white">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+  
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u> Content</u></h5>
+          <p> Here we are providing our best product that you gave confidents and make beatifual and useful for evry time .Our service gave you full satisfaction.
+              <br><center>Hope you like it!!</center>
+              
+          </p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u>Quick Links</u></h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+            <li>
+              <a href="#!">FAQ's</a>
+            </li>
+            <li>
+              <a href="#!">Customer Services</a>
+            </li>
+            <li>
+              <a href="#!">Contact Us</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u> Information </u></h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">About Us</a>
+            </li>
+            <li>
+              <a href="#!">Contact Us</a>
+            </li>
+            <li>
+              <a href="#!">Size Guide</a>
+            </li>
+            <li>
+              <a href="#!">Customer Services</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4"><u>Contact Us</u></h5>
+  
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i>
+                Location: Udhana Darvaja
+                Surat, Gujarat
+            </li>
+            <li>
+                Call Us: (+91) 91456-7898
+            </li>
+            <li>
+                Email Us: support@abc.com
+            </li>
+            <li>
+                Fax: +123456
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <hr>
+  
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-danger btn-rounded"  data-toggle="modal" data-target="#signup">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+  
+    <hr>
+  
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#" class="text-secondary"> ABC.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+    <div class="modal-content">
+    <div class="modal-header">
+      <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      
+    </div>
+    <div class="modal-body">
+      <form>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="fname" pattern="[a-z][0-9]"class="form-control" required>
+        <label for="pwd"><b>Password</b></label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" maxlength="6" name="pswd">
+    <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+     <div>
+         <br>
+        <p><b>If you have not account then first Register it !! </b> <a href="registerform.html">Register...</a>.</p>
+          </div>
+          <div>
+        
+           <p><a href="#forgotpassword" data-toggle="modal" data-target="#rpwd"><b>Forgot Password</b> </a>.</p>
+             </div>
+          
+        
+    </form>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+        <span class="glyphicon glyphicon-remove"></span> Cancel
+      </button>
+      <p>Need <a href="#">help?</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="modal fade" id="signup" role="dialog">
+    <div class="modal-dialog">
+    
+    <div class="modal-content">
+    <div class="modal-header">
+    <h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    
+    </div>
+    <div class="modal-body">
+    <label for="fname"><b>Firstname</b></label>
+    <input type="text" placeholder="Enter Firstname" name="fname"class="form-control" required>
+    
+    <label for="lname"><b>Lastname</b></label>
+    <input type="text" placeholder="Enter Lastname" name="lname"class="form-control" required>
+    <label for="gender"><b>Gender</b></label>
+    <div class="radio">
+        <label><input type="radio" name="optradio" checked>Female</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio">Male</label>
+      </div>
+    
+    
+    <label for="phone"><b>Phone no</b></label>
+    <input type="tel" placeholder="Enter Phone No" name="phone" maxlength=10 class="form-control" required>
+    
+    <div class="form-group">
+        <label for="Address"><b>Address</b></label>
+        <textarea class="form-control" rows="5" id="add" name="add"></textarea>
+      </div>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="fname" pattern="[a-z][0-9]"class="form-control" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email"class="form-control" required>
+    
+    
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"class="form-control" maxlength="6" required>
+    
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" class="form-control" maxlength="6" required>
+    
+    
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+    
+    
+    
+    </div>
+    </form>
+      
+    
+    </div>
+    <div class="modal-footer">
+    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+      <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+    <p>Need <a href="#">help?</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="modal fade" id="rpwd" role="dialog">
+      <div class="modal-dialog">
+      
+      <div class="modal-content">
+      <div class="modal-header">
+        <h4><span class="glyphicon glyphicon-lock"></span> Reset Password</h4>
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        
+      </div>
+      <div class="modal-body">
+        <form>
+          <br>
+          <label for="username"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="fname" pattern="[a-z][0-9]"class="form-control" required>
+          <label for="pwd"><b>Password:</b></label>
+          <input type="password" class="form-control" id="pwd" placeholder="New password" maxlength="6" name="npswd">
+      <br>
+          <button type="submit" class="btn btn-info">Submit</button>
+      
+          
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancel
+        </button>
+        <p>Need <a href="#">help?</a></p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+    
+    
+    
+    
+    
+</body>
+</html>
